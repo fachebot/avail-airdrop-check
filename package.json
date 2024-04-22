@@ -1,0 +1,27 @@
+{
+  "name": "avail-airdrop-check",
+  "version": "1.0.0",
+  "description": "批量检查Avail节点冲突以及轻节点挑战的空投奖励",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fachebot/avail-airdrop-check.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fachebot/avail-airdrop-check/issues"
+  },
+  "homepage": "https://github.com/fachebot/avail-airdrop-check#readme",
+  "dependencies": {
+    "@polkadot/api": "^10.11.2",
+    "@polkadot/util-crypto": "^12.6.2",
+    "avail-js-sdk": "^0.2.11",
+    "axios": "^1.6.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  }
+}
