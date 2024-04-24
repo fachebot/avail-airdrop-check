@@ -45,16 +45,16 @@ async function availCheck(mnemonic: string) {
     );
     claimed_accounts.push(mnemonic);
   } else if (res.data?.message == "Not Eligible") {
-    if (res.data?.nft) {
-      nft_count += 1;
-      console.info(
-        `Checking Account: ${keypair.address}, NFT: ${res.data?.nft.nft_type}`
-      );
-    } else {
-      console.info(`Checking Account: ${keypair.address}, Not Eligible`);
-    }
+    console.info(`Checking Account: ${keypair.address}, Not Eligible`);
   } else {
     console.info(res.status, JSON.stringify(res.data));
+  }
+
+  if (res.data?.nft) {
+    nft_count += 1;
+    console.info(
+      `Checking Account: ${keypair.address}, NFT: ${res.data?.nft.nft_type}`
+    );
   }
 
   return keypair.address;
